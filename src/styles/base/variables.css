@@ -1,0 +1,54 @@
+:root {
+    /* Premium Green Color Palette */
+    /* Dominant Colors */
+    --color-deep-space-blue: #10443e;
+    --color-pacific-blue: #62a29a;
+
+    /* New Semantic Colors */
+    --color-deep-forest: #10443e;
+    --color-forest-green: #32745c;
+    --color-sage-green: #62a29a;
+    --color-warm-tan: #b29361;
+    --color-soft-cream: #ede4d6;
+
+    /* Accent Colors */
+    --color-tuscan-sun: #b29361;
+    --color-lilac-ash: #32745c;
+    --color-pastel-petal: #ede4d6;
+
+    /* Semantic Mappings */
+    --color-warm-gold: var(--color-tuscan-sun);
+    --color-deep-charcoal: var(--color-deep-space-blue);
+    --color-soft-ivory: #ede4d6;
+    --color-muted-olive: var(--color-pacific-blue);
+    --color-bronze: var(--color-tuscan-sun);
+    --color-champagne: #ede4d6;
+    --color-rich-espresso: var(--color-deep-space-blue);
+    --color-slate-gray: var(--color-lilac-ash);
+
+    /* Legacy variable names mapped to new colors for compatibility */
+    --color-terracotta: var(--color-warm-gold);
+    --color-earth-brown: var(--color-deep-charcoal);
+    --color-warm-cream: var(--color-champagne);
+    --color-muted-sage: var(--color-muted-olive);
+    --color-burnt-sienna: var(--color-bronze);
+    --color-light-tan: var(--color-champagne);
+    --color-dark-charcoal: var(--color-rich-espresso);
+    --color-soft-white: var(--color-soft-ivory);
+
+    /* Typography - Helvetica */
+    --font-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+    --spacing-xxl: 8rem;
+
+    /* Transitions */
+    --transition-fast: 0.15s cubic-bezier(0.22, 1, 0.36, 1);
+    --transition-smooth: 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}

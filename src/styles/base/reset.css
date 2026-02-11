@@ -1,0 +1,33 @@
+/* === Global Resets === */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--color-dark-charcoal);
+    background: linear-gradient(180deg, #ffffff 0%, rgba(237, 228, 214, 0.3) 50%, var(--color-soft-cream) 100%);
+    line-height: 1.7;
+    overflow-x: hidden;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-fast);
+}

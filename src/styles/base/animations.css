@@ -1,0 +1,98 @@
+/* === Animations === */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.delay-2 {
+    animation-delay: 0.2s;
+}
+
+.delay-3 {
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: var(--transition-smooth);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-rise {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+
+.section-rise.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Preloader Animations */
+@keyframes tracking-in {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+        letter-spacing: 0.2em;
+    }
+}
+
+@keyframes width-grow {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        width: 120px;
+        opacity: 1;
+    }
+}
+
+.scroll-line {
+    width: 2px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--color-warm-cream), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+
+    0%,
+    100% {
+        opacity: 0.3;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+}

@@ -1,0 +1,49 @@
+/* === Typography === */
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--color-lilac-ash);
+}
+
+h1 {
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    letter-spacing: -0.04em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: clamp(2.25rem, 5vw, 4.5rem);
+    letter-spacing: -0.03em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+h4 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+p {
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+    letter-spacing: -0.01em;
+}
+
+.large-text {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    line-height: 1.6;
+}
+
+.highlight-text {
+    color: var(--color-terracotta);
+    font-size: clamp(1.125rem, 2vw, 1.375rem);
+    margin: var(--spacing-md) 0;
+}

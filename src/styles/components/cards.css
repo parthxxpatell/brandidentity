@@ -1,0 +1,171 @@
+/* === Cards === */
+/* Standard Cards */
+.product-card,
+.stat-card,
+.feature-card,
+.benefit-card,
+.tier-card,
+.testimonial-card,
+.video-card,
+.env-card,
+.why-join-card,
+.role-card,
+.overview-card,
+.value-card,
+.process-step,
+.step-content,
+.tech-stat,
+.faq-item,
+.product-preview-card {
+    background: rgba(248, 246, 240, 0.7);
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 20px;
+    padding: var(--spacing-md);
+    box-shadow: 0 8px 32px rgba(26, 26, 26, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover States */
+.overview-card:hover,
+.value-card:hover,
+.feature-card:hover,
+.benefit-card:hover,
+.product-card:hover,
+.stat-card:hover,
+.env-card:hover,
+.video-card:hover,
+.tier-card:hover,
+.why-join-card:hover {
+    background: rgba(248, 246, 240, 0.9) !important;
+    border-color: rgba(212, 175, 55, 0.4);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.15) !important;
+}
+
+/* Specific Card Styles */
+.overview-icon,
+.benefit-icon,
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.overview-card,
+.benefit-card,
+.feature-card {
+    text-align: center;
+}
+
+.overview-card h3,
+.benefit-title,
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-earth-brown);
+}
+
+.overview-card p,
+.benefit-description {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.7;
+    color: var(--color-dark-charcoal);
+}
+
+/* Product Card Specifics */
+.product-card {
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 0;
+}
+
+.product-image {
+    position: relative;
+    height: 400px;
+    background: linear-gradient(135deg, var(--color-muted-sage), var(--color-light-tan));
+    overflow: hidden;
+}
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: var(--spacing-md);
+}
+
+.product-content {
+    padding: var(--spacing-md);
+    position: relative;
+}
+
+/* Stat Card Specifics */
+.stat-number {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--color-warm-tan);
+    font-family: var(--font-serif);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 700;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.4;
+}
+
+/* Tier Card Specifics */
+.tier-card {
+    position: relative;
+}
+
+.tier-card.featured {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.95) 0%, rgba(205, 127, 50, 0.95) 100%) !important;
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.4) !important;
+    transform: scale(1.05);
+    color: var(--color-soft-white);
+}
+
+.tier-card.featured h3,
+.tier-card.featured .tier-description {
+    color: var(--color-soft-white);
+}
+
+.tier-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: var(--color-burnt-sienna);
+    color: var(--color-soft-white);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* Video Card */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: var(--spacing-md);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
