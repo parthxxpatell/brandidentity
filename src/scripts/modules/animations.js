@@ -19,7 +19,7 @@ export function initAnimations() {
 function initLenis() {
     if (typeof Lenis !== 'undefined') {
         const lenis = new Lenis({
-            duration: 0.23, /* 67% faster */
+            duration: 0.1, /* Much faster - reduced from 0.23 */
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
             direction: 'vertical',
             gestureDirection: 'vertical',
@@ -59,11 +59,11 @@ function initScrollReveal() {
 function initAOS() {
     if (typeof AOS !== 'undefined') {
         AOS.init({
-            duration: 330, /* 45% faster */
+            duration: 200, /* Faster animations - reduced from 330ms */
             easing: 'ease-out-cubic',
             once: true,
             offset: 50,
-            delay: 50
+            delay: 0 /* Removed delay for instant animations */
         });
     }
 }
